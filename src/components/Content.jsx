@@ -29,7 +29,7 @@ export default function Content() {
 
 	return (
 		<div className="w-[700px] rounded-md mx-auto bg-white mt-8 p-8 flex flex-col justify-center items-center">
-			<h1 className="font-bold text-2xl mb-4">{activeIndex} folds</h1>
+			<h1 className="font-bold text-2xl mb-4">{activeIndex} Kat</h1>
 			<img
 				src={data[activeIndex].imgUrl}
 				alt=""
@@ -37,7 +37,7 @@ export default function Content() {
 				style={{ height: "300px" }}
 			/>
 			<p className="mt-4">
-				Your paper is now <b>{formatNumber(uzunluk)}</b> tall.
+				Kağıdınız <b>{formatNumber(uzunluk)}</b> boyunda.
 			</p>
 			<p className="mt-2">{data[activeIndex].desc}</p>
 			<div className="flex justify-center items-center mt-4 gap-2 text-white">
