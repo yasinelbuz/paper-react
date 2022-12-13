@@ -28,13 +28,12 @@ export default function Content() {
 	}
 
 	return (
-		<div className="w-[700px] rounded-md mx-auto bg-white mt-8 p-8 flex flex-col justify-center items-center">
+		<div className="w-[90%] md:w-[700px] rounded-md mx-auto bg-white mt-8 p-8 flex flex-col justify-center items-center">
 			<h1 className="font-bold text-2xl mb-4">{activeIndex} Kat</h1>
 			<img
 				src={data[activeIndex].imgUrl}
 				alt=""
-				className="rounded-md"
-				style={{ height: "300px" }}
+				className="rounded-md h-[200px] md:h-[300px]"
 			/>
 			<p className="mt-4">
 				Kağıdınız <b>{formatNumber(uzunluk)}</b> boyunda.
